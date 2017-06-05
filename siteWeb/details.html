@@ -20,12 +20,45 @@
             <a href="panier.html"><i class="fa fa-2x fa-shopping-bag"></i></a>
         </nav>
     </header>
+    <div class="menu-burger">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="account.html">Account</a>
+            </div>
+        </div>
+        <span class="burger" onclick="openNav()">&#9776;</span>
+    </div>
     <div class="cuter"></div>
 
     <main id="details">
-        <h2>Serie 1 • blue SWS</h2>
+        <h2>Série 1 • green SWS</h2>
         <section class="details">
-
+            <figure>
+                <img src="img-content/article01.png" alt="sweat green serie 1">
+            </figure>
+            <div class="info">
+                <ul>
+                    <li>SWS - Sweat shirt bleu marine.</li>
+                    <li>Intégralement faits en France</li>
+                    <li>Assemblés à la main.</li>
+                </ul>
+                <p><span>100.00€ </span>Livraison et retour gratuits.</p>
+                <form action="">
+                    <label for="size" class="lb-size">Taille :</label>
+                    <select name="size" id="size">
+                        <option value="">Veuillez choisir</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <input type="submit" value="Ajouter au panier">
+                </form>
+            </div>
         </section>
     </main>
 
@@ -53,6 +86,6 @@
             <p>Copyright © 2017 SWS PARIS</p>
         </section>
     </footer>
-
+    <script src="js/app.js"></script>
 </body>
 </html>
